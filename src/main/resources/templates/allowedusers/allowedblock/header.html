@@ -1,0 +1,27 @@
+<div th:fragment="header" >
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/userhome" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="svg" aria-label="workspace_table_study_work_furniture_icon_209762"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <style>
+            body { background-color: cornsilk;}
+
+        </style>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/userhome" class="nav-link px-2 link-secondary">Главная</a></li>
+            <li><a href="/users/blog" class="nav-link px-2 link-dark">Блог</a></li>
+                    <li><a href="/users/blog/add" class="nav-link px-2 link-dark">Добавить статью</a></li>
+            <li><a href="/users/about" class="nav-link px-2 link-dark">О нас</a></li>
+            <li><a href="/666" class="nav-link px-2 link-dark">Спросить у Яндекса</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <form th:action="@{/logout}" method="post">
+                <button type="submit" class="btn btn-outline-primary me-2">Log Out</button>
+            </form>
+
+        </div>
+    </header>
+</div>
+
